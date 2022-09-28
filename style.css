@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+/* font-family: 'Josefin Sans', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-primary {
+    display: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+}
+
+.left,
+.right {
+    height: 100%;
+
+}
+
+.left {
+    width: 60%;
+    padding-left: 10rem;
+    padding-top: 3rem;
+}
+
+.img-container {
+    background-image: url("./images/hero-desktop.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.right {
+    width: 40%;
+
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.right {
+    height: 100%;
+}
+
+.header {
+    margin-top: 10rem;
+}
+
+.header>h1 {
+    font-size: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+.header>h1:first-child {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.para {
+    margin-top: 1rem;
+}
+
+.para>p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+.text-box {
+    width: 67%;
+    border: 1px solid hsl(0, 93%, 68%);
+    border-radius: 1em;
+    height: 3.3rem;
+    margin-top: 2rem;
+}
+
+#email {
+    margin-left: 1rem;
+    width: 70%;
+    height: 2.9rem;
+    border: none;
+    outline: none;
+}
+
+#email:optional {
+    background-color: transparent !important;
+}
+
+.text-box>img {
+    transform: translate(10px, 10px);
+    display: none;
+}
+
+#email::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+}
+
+
+
+.form-container>button {
+    transform: translate(-56px, 30px);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 5rem;
+
+    height: 3.6rem;
+    border-radius: 1.4rem;
+    border: none;
+}
+
+.form-container {
+    display: flex;
+}
+
+.error-message {
+    display: none;
+    margin-top: 1rem;
+    color: hsl(0, 36%, 70%);
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text-box>img {
+    width: 1.2rem;
+}
+
+@media (min-width: 914px) and (max-width: 1025px) {
+    .left {
+        padding-left: 3rem;
+    }
+
+    #email {
+        padding-top: 0.7rem
+    }
+
+    .header {
+        margin-top: 5rem;
+    }
+
+    .header>h1 {
+        font-size: 2rem;
+    }
+
+    .form-container>button {
+        transform: translate(-35px, 30px);
+    }
+}
+
+@media (min-width: 764px) and (max-width: 913px) {
+    .header {
+        margin-top: 16rem;
+    }
+
+    .left {
+        padding-left: 3rem;
+    }
+
+
+
+    .header>h1 {
+        font-size: 2rem;
+    }
+
+    .form-container>button {
+        transform: translate(-35px, 30px);
+    }
+}
+
+@media (min-width: 416px) and (max-width: 763px) {
+
+    .header {
+        margin-top: 7rem;
+    }
+
+    .left {
+        padding-left: 3rem;
+    }
+
+
+
+    .header>h1 {
+        font-size: 2rem;
+    }
+
+    .form-container>button {
+        transform: translate(-35px, 30px);
+        height: 2.6rem;
+    }
+
+    .text-box {
+        height: 2.4rem;
+    }
+
+    #email {
+        height: 2rem;
+        width: 59%;
+    }
+
+}
+
+@media (min-width: 282px) and (max-width: 415px) {
+    .logo-primary {
+        display: block;
+        padding-block: 1rem;
+        padding-left: 1rem;
+    }
+
+    .logo-primary>img {
+        width: 6rem;
+    }
+
+    .right>.img-container {
+        background-image: url("./images/hero-mobile.jpg");
+    }
+
+    .logo {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .header {
+        margin-top: 16rem;
+    }
+
+    .left {
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+
+    .header {
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .para>p {
+        font-size: .8rem;
+
+        text-align: center;
+    }
+
+
+    .header>h1 {
+        font-size: 2rem;
+    }
+
+    .form-container>button {
+        transform: translate(-35px, 30px);
+        height: 3.2rem;
+    }
+
+    .text-box>img {
+        transform: translate(-2px, 5px);
+        width: 1rem;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+
+    }
+
+    .right {
+        height: 25%;
+    }
+
+    .error-message {
+        margin-left: 6.5rem;
+    }
+
+    .text-box {
+        margin-left: 3rem;
+        height: 3rem;
+    }
+
+    #email {
+        height: 2.7rem;
+        padding-top: 0rem;
+    }
+
+    .left {
+        height: 75%;
+    }
+}
+
+@media (max-width: 281px) and (min-width: 0px) {
+    .logo-primary {
+        display: block;
+        padding-block: 1rem;
+        padding-left: 1rem;
+    }
+
+    .logo-primary>img {
+        width: 6rem;
+    }
+
+    .right>.img-container {
+        background-image: url("./images/hero-mobile.jpg");
+    }
+
+    .logo {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .header {
+        margin-top: 16rem;
+    }
+
+    .left {
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+
+    .header {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .para>p {
+        font-size: .68em;
+
+        text-align: center;
+    }
+
+
+    .header>h1 {
+        font-size: 2rem;
+    }
+
+    .form-container>button {
+        transform: translate(-25px, 30px);
+        height: 3.2rem;
+        width: 4rem;
+    }
+
+    .text-box>img {
+        transform: translate(-2px, 3px);
+        width: 0.8rem;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+
+    }
+
+    .right {
+        height: 25%;
+    }
+
+    .error-message {
+        margin-left: 3.5rem;
+    }
+
+    .text-box {
+        margin-left: 1.6rem;
+        height: 3rem;
+    }
+
+    #email {
+        height: 2.7rem;
+        padding-top: 0rem;
+    }
+
+    .left {
+        height: 75%;
+    }
+}
+
+@media (min-width: 652px) and (max-width: 916px) and (orientation: landscape) {
+    .header>h1 {
+        font-size: 1rem;
+    }
+
+    .text-box {
+        margin-top: 1rem;
+    }
+
+    .header {
+        margin-top: 1rem;
+    }
+
+    .left {
+        padding-top: 1rem;
+    }
+
+    .error-message {
+        margin-left: 3rem;
+        font-size: .8rem;
+    }
+
+    #email {
+        padding-top: 0.5rem;
+    }
+
+    .text-box>img {
+        transform: translate(10px, 4px);
+    }
+
+    .form-container>button {
+        transform: translate(-35px, 14px);
+    }
+
+    .logo>img {
+        width: 6rem;
+    }
+
+    .para>p {
+        font-size: .8em;
+    }
+}
